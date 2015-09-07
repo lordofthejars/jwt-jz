@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Make your REST services attack proof</title>
+  <link rel="stylesheet" type="text/css" href="build/build.css">
+  <body>
+    <article>
+      <section data-bespoke-backdrop="backdrop backdrop--title" class="title undefined">
+        <h1> Make your <span class='important'>REST</span> services<br /> <span class='important'>attack</span> proof</h1>
+      </section>
+      <section><img src="images/profile.png" class="avatar">
+        <h4>@alexsotob - lordofthejars.com</h4><img src="images/cloudbees.png" class="cloudbees"><img src="images/logos.png" class="logos">
+      </section>
+      <section>
+        <div class="images"><img src="images/dzone1.png" class="side-by-side"><img src="images/aia.jpg" class="side-by-side"></div>
+      </section>
+      <section data-bespoke-backdrop="backdrop backdrop--still backdrop--matrix" class="still matrix undefined">
+        <h2>Don't</h2>
+        <h3>&mdash; be &mdash;</h3>
+        <h2>scared</h2>
+      </section>
+      <section data-bespoke-backdrop="backdrop backdrop--prepare" class="prepare undefined">
+        <h2>Prepare your Devices</h2>
+      </section>
+      <section data-bespoke-backdrop="backdrop backdrop--rest" class="rest undefined">
+        <h1>REST API Introduction</h1>
+      </section>
+      <section>
+        <h2 class="underline">What is REST?</h2>
+        <ul class="lists">
+          <li>Architecture style</li>
+          <li>simpler alternative to SOAP, CORBA, RPC systems</li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="underline">Constraints</h2>
+        <ul class="lists">
+          <li class="important">client-server</li>
+          <li class="important">stateless</li>
+          <li>cacheable on client</li>
+          <li>code on demand (optional)</li>
+          <li>layered system</li>
+          <li>uniform interface</li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="underline">What are RESTful WebServices?</h2>
+        <ul class="lists">
+          <li>REST over webservices</li>
+          <li>URI for identifying resources</li>
+          <li>HTTP methods for operations</li>
+          <li>MIME-type for representation</li>
+          <li>hypertext links</li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="underline">Examples</h2>
+        <h3>GET http://example.com/items/12</h3>
+        <h3>POST http://example.com/items</h3>
+        <h3>PUT http://example.com/items/12</h3>
+        <h3>DELETE http://example.com/items/12</h3>
+        <h3>PATCH http://example.com/items/12</h3>
+      </section>
+      <section data-bespoke-backdrop="backdrop backdrop--hotel" class="hotel undefined">
+        <h1>Authentication <br />vs<br /> Authorization</h1>
+      </section>
+      <section>
+        <h3>Authentication = Registration Desk</h3>
+        <h3>Authorization = Keys of your Room</h3>
+      </section>
+      <section data-bespoke-backdrop="backdrop backdrop--oldsec" class="oldsec undefined">
+        <h1>Java EE <br />and<br /><span class='important'>Security</span></h1>
+      </section>
+      <section><img src="images/cookies.png" class="schemas">
+      </section>
+      <section data-bespoke-backdrop="backdrop backdrop--cookies" class="cookies undefined">
+        <h2>Perils of <span class='important'>cookies</span></h2>
+      </section>
+      <section data-bespoke-backdrop="backdrop backdrop--owasp" class="owasp undefined">
+        <h2 class="underline">XSS attack</h2>
+        <h3>&ldquo;XSS attacks occur when an attacker uses a web application<br /> to send malicious code, generally in the form of a browser side script,<br /> to a different end user.&rdquo;</h3>
+        <h4>&mdash; OWASP site &mdash;</h4>
+      </section>
+      <section data-bespoke-backdrop="backdrop backdrop--owasp" class="owasp undefined">
+        <h2 class="underline">CSRF attack</h2>
+        <h3>&ldquo;CSRF is an attack that forces an end user to execute unwanted actions on a web application <br /> in which they're currently authenticated.&rdquo;</h3>
+        <h3>&lt;img src="http://bank.com/transfer.do?acct=MARIA&amount=100000" width="0" height="0" border="0"&gt;</h3>
+        <h4>&mdash; OWASP site &mdash;</h4>
+      </section>
+      <section data-bespoke-backdrop="backdrop backdrop--owasp" class="owasp undefined">
+        <h2 class="underline">MITM attack</h2>
+        <h3>&ldquo;The man-in-the middle attack intercepts a communication between two systems.<br />The MITM attack could also be done over an https connection by using the same technique.&rdquo;</h3>
+        <h4>&mdash; OWASP site &mdash;</h4>
+      </section>
+      <section data-bespoke-backdrop="backdrop backdrop--adaoh" class="adaoh undefined">
+        <h2>HTTP Session and <span class='important'>RESTful</span></h2>
+      </section>
+      <section>
+        <h2 class="underline">HTTP Sessions</h2>
+        <ul class="lists">
+          <li>Opaque</li>
+          <li>Microservices roundtrip</li>
+          <li>Stateful</li>
+          <li>No Scalable</li>
+        </ul>
+      </section>
+      <section data-bespoke-backdrop="backdrop backdrop--vault" class="vault undefined">
+        <h1 class="title-single-words">A new <span class='important'>Hope</span></h1>
+      </section>
+      <section data-bespoke-backdrop="backdrop backdrop--tokens" class="tokens undefined">
+        <h2><span class='important'>TOKENS</span></h2>
+      </section>
+      <section data-bespoke-backdrop="backdrop backdrop--jwt" class="jwt undefined">
+        <h2>JWT</h2>
+        <h3>(jot)</h3>
+        <h2>JSON Web Token</h2>
+      </section>
+      <section>
+        <h2 class="underline">What is <span class='important'>JWT</span>?</h2>
+        <ul class="lists">
+          <li>URL safe-token</li>
+          <li>HTTP header or URL parameter</li>
+          <li>Claims are JSON</li>
+          <li>Enable claims digitally signed, MACed or enncrypted</li>
+        </ul>
+      </section>
+      <section><img src="images/tokencolor.png">
+      </section>
+      <section>
+        <h2 class="green">Header</h2>
+        <pre class="language-javascript"><code>{
+  "type": "JWT",
+  "alg": "HS256"
+}</code></pre>
+        <pre class="language-java"><code>String header = new String(Base64.encodeBase64URLSafe(headerObject)
+</code></pre>
+      </section>
+      <section><img src="images/tokencolor.png">
+      </section>
+      <section>
+        <h2 class="yellowColor">Claims</h2>
+        <pre class="language-javascript"><code>{
+  "iss": "example.com",
+  "sub": "alex",
+  "exp": 1416891754,
+  "roles": ["ADMIN", "USER"]
+}
+</code></pre>
+        <pre class="language-java"><code>String claims = new String(Base64.encodeBase64URLSafe(claimObject)
+</code></pre>
+      </section>
+      <section><img src="images/tokencolor.png">
+      </section>
+      <section>
+        <h2 class="blue">Signature</h2>
+        <pre class="language-java"><code>String signature = sign(algorithm, 
+                        join(new String[] {header, claims}, "."), 
+                        secret);</code></pre>
+      </section>
+      <section><img src="images/tokencolor.png">
+      </section>
+      <section>
+        <h2>JWT</h2>
+        <pre class="language-java"><code>String token = header + "." + payload + "." + signature;
+</code></pre>
+      </section>
+      <section><img src="images/jwt_wf.png" class="schemas">
+      </section>
+      <section data-bespoke-backdrop="backdrop backdrop--engine" class="engine undefined">
+        <h2>Start your Engines</h2>
+      </section>
+      <section data-bespoke-backdrop="backdrop backdrop--adaglasses" class="adaglasses undefined">
+        <h1>Let's see inside</h1>
+      </section>
+      <section data-bespoke-backdrop="backdrop backdrop--finger" class="finger undefined">
+        <h2>Fingerprinting tokens</h2>
+      </section>
+      <section>
+        <h2 class="underline">Fingerprinting tokens</h2>
+        <ul class="lists">
+          <li>Unique parameters</li>
+          <li>One degree of freedom</li>
+          <li>Detect stolen tokens</li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="underline">Fingerprinting tokens</h2>
+        <ul class="lists">
+          <li>Connection: IP, SSL ID</li>
+          <li>Browser: Agent, Accept-Language, Accept, Accept-Encoding</li>
+          <li>Javascript: Screen size, OS, TimeZone</li>
+        </ul>
+      </section>
+      <section data-bespoke-backdrop="backdrop backdrop--alexband" class="alexband undefined">
+        <h1>Watch your <br/> <span class='important'>sensitive data</span></h1>
+      </section>
+      <section>
+        <h2 class="underline">Encryption</h2>
+        <ul class="lists">
+          <li>Use TLS</li>
+          <li>Encrypt JWT claims using <span class='important'>JWE</span></li>
+          <li>Nested JWT using <span class='important'>JWE</span> (signed -> encrypted)</li>
+        </ul>
+      </section>
+      <section data-bespoke-backdrop="backdrop backdrop--pirates" class="pirates undefined">
+        <h2>Foolproof</h2>
+      </section>
+      <section data-bespoke-backdrop="backdrop backdrop--ending" class="ending undefined">
+        <h1>We are <br/> Finishing</h1>
+      </section>
+      <section>
+        <h2 class="underline">Conclusions</h2>
+        <ul class="lists">
+          <li>Tokens simplifies RESTful auth</li>
+          <li>Easy to implement and test</li>
+          <li>OAuth2, SAML, OpenID</li>
+          <li>Nimbus JOSE + JWT / JJWT</li>
+          <li>Key rotation</li>
+          <li>Don't use HTML 5 Web Storage</li>
+          <li>F5 survival with server cookies</li>
+          <li>Stateful Tokens (oh no)</li>
+        </ul>
+      </section>
+      <section><img src="images/profile.png" class="avatar"><br><a href="http://github.com/lordofthejars/jwt-jz" style="border:none">
+          <h3>http://github.com/lordofthejars/jwt-jz</h3></a>
+      </section>
+      <section data-bespoke-backdrop="backdrop backdrop--adarise" class="adarise undefined">
+        <h1>Questions</h1>
+      </section>
+    </article>
+    <script src="build/build.js"></script>
+  </body>
+</html>
