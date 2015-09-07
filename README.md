@@ -1,7 +1,3 @@
-[ ![Codeship Status for markdalgleish/presentation-a-state-of-change-object-observe](https://www.codeship.io/projects/954cc040-4368-0132-3a1e-26172f935df1/status)](https://www.codeship.io/projects/44685)
-
-# &ldquo;A State of Change&rdquo;
-## &mdash;On the future of Object.observe
 
 > A [Bespoke.js](http://markdalgleish.com/projects/bespoke.js) presentation, built with [generator-bespoke](https://github.com/markdalgleish/generator-bespoke)
 
