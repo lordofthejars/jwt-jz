@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lordofthejars/jwt-jz.git"
+    "url": "git@github.com:lordofthejars/jwt-jz.git"
   },
   "scripts": {
     "serve": "gulp serve",
