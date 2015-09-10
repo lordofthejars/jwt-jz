@@ -11,7 +11,7 @@ sup
 
 li:before
   content: ''
-  
+
 h1 a
   border: none
 
@@ -28,13 +28,18 @@ h1.name
 
 .schemas
   width: 60%
-  
+
 .logos
   width: 600px
 
 .cloudbees
   width: 150px
   margin: .5em 0
+
+.two-columns
+  -webkit-column-count: 3
+  -moz-column-count: 3
+  column-count: 3
 
 .side-by-side
   display: inline-block;
@@ -43,7 +48,7 @@ h1.name
   height: 400px;
   margin: 0.5em
 .images
-  text-align:center; 
+  text-align:center;
 
 .bespoke-slide
   z-index: 1
@@ -76,7 +81,7 @@ pre, code
     background: url('../images/rest.jpg') no-repeat center center fixed
     background-size: cover
     &.bespoke-backdrop-active
-      opacity: 0.60 
+      opacity: 0.60
   &--oldsec
     background: url('../images/oldsec.jpg') no-repeat center center fixed
     background-size: cover
@@ -140,7 +145,7 @@ pre, code
     background: url('../images/adarise.jpg') no-repeat center center fixed
     background-size: cover
     &.bespoke-backdrop-active
-      opacity: 0.60  
+      opacity: 0.60
   &--tokens
     background: url('../images/tokens.jpg') no-repeat center center fixed
     background-size: cover
@@ -242,13 +247,13 @@ pre, code
   color: black
   h1
     border-color: currentColor
-    
+
 .lists
   text-align: center
   list-style-type: none
 
 .underline
-  padding-bottom: .5em;
+  padding-bottom: 0.25em;
   border-top-color: rgb(221, 221, 221);
   border-top-style: solid;
   border-top-width: 0px;
@@ -261,7 +266,7 @@ pre, code
   border-left-color: rgb(221, 221, 221);
   border-left-style: solid;
   border-left-width: 0;
-  
+
 .important
   color: red
 
@@ -273,12 +278,15 @@ pre, code
 
 .blue
   color: blue
-  
+
 .title-single-words
     word-spacing: 9999px
     line-height: 1.5em
     overflow: hidden
-  
+
+.bespoke-slide aside
+  display: none
+
 .bullet.expand
   transition: all 2s ease
   opacity: 0

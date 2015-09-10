@@ -21,7 +21,8 @@ html
 
       +slide('title')
         h1  Make your <span class='important'>REST</span> services<br /> <span class='important'>attack</span> proof
-      
+        aside(role='note') SPA and public API
+
       +slide
         img.avatar(src='images/profile.jpg')
         h4 @alexsotob - lordofthejars.com
@@ -32,34 +33,37 @@ html
         div.images
           img.side-by-side(src='images/dzone1.png')
           img.side-by-side(src='images/aia.jpg')
-      
+
       +slide('still matrix')
         h2 Don't
         h3 &mdash; be &mdash;
         h2 scared
-        
+
       +slide('prepare')
         h2 Prepare your Devices
-      
+
       +slide('rest')
         h1 REST API Introduction
-      
+
       +slide
         h2.underline What is REST?
         ul.lists
           li Architecture style
-          li simpler alternative to SOAP, CORBA, RPC systems
+          li Simpler alternative to SOAP, CORBA, RPC systems
 
       +slide
         h2.underline Constraints
         ul.lists
-          li.important client-server
-          li.important stateless
-          li cacheable on client
-          li code on demand (optional)
-          li layered system
-          li uniform interface
-          
+          li.important Client-server
+          li.important Stateless
+          li Cacheable on client
+          li Code on demand (optional)
+          li Layered system
+          li Uniform interface
+
+        aside(role='note') Client untrusted
+        aside(role='note') how to identify resources, manipulate, ...
+
       +slide
         h2.underline What are RESTful WebServices?
         ul.lists
@@ -68,50 +72,62 @@ html
           li HTTP methods for operations
           li MIME-type for representation
           li hypertext links
-      
+
       +slide
-        h2.underline Examples
-        h3 GET http://example.com/items/12
-        h3 POST http://example.com/items
-        h3 PUT http://example.com/items/12
-        h3 DELETE http://example.com/items/12
-        h3 PATCH http://example.com/items/12
-      
+        <b>GET</b> http://example.com/items/12
+
+      +slide
+        <b>POST</b> http://example.com/items
+
+      +slide
+        <b>PUT</b> http://example.com/items/12
+
+      +slide
+        <b>DELETE</b> http://example.com/items/12
+
+      +slide
+        <b>PATCH</b> http://example.com/items/12
+
       +slide('hotel')
         h1 Authentication <br />vs<br /> Authorization
-      
+
       +slide
         h3 Authentication = Registration Desk
         h3 Authorization = Keys of your Room
-      
+
       +slide('oldsec')
         h1 Java EE <br />and<br /><span class='important'>Security</span>
-      
+
+        aside(role='note') Http Session old times, web desc, java ee, Shiro Spring Sec
+
       +slide
         img.schemas(src='images/cookies.png')
-      
+
       +slide('cookies')
         h2 Perils of <span class='important'>cookies</span>
-      
+
       +slide('owasp')
-        h2.underline XSS attack
-        h3 &ldquo;XSS attacks occur when an attacker uses a web application<br /> to send malicious code, generally in the form of a browser side script,<br /> to a different end user.&rdquo;
+        h3 &ldquo;<b>XSS</b> attacks occur when an attacker uses a web application<br /> to send malicious code, generally in the form of a browser side script,<br /> to a different end user.&rdquo;
         h4 &mdash; OWASP site &mdash;
-        
+
+        aside(role='note') Like SQL injection
+
       +slide('owasp')
-        h2.underline CSRF attack
-        h3 &ldquo;CSRF is an attack that forces an end user to execute unwanted actions on a web application <br /> in which they're currently authenticated.&rdquo;
+        h3 &ldquo;<b>CSRF</b> is an attack that forces an end user to execute unwanted actions on a web application <br /> in which they're currently authenticated.&rdquo;
         h3 &lt;img src="http://bank.com/transfer.do?acct=MARIA&amount=100000" width="0" height="0" border="0"&gt;
         h4 &mdash; OWASP site &mdash;
-      
+
+        aside(role='note') Malicious system acts on behalf of real user
+
       +slide('owasp')
-        h2.underline MITM attack
-        h3 &ldquo;The man-in-the middle attack intercepts a communication between two systems.<br />The MITM attack could also be done over an https connection by using the same technique.&rdquo;
+        h3 &ldquo;<b>The man-in-the middle</b> attack intercepts a communication between two systems.<br />The MITM attack could also be done over an https connection by using the same technique.&rdquo;
         h4 &mdash; OWASP site &mdash;
-      
+
+        aside(role='note') Https not secure
+
       +slide('adaoh')
         h2 HTTP Session and <span class='important'>RESTful</span>
-      
+
       +slide
         h2.underline HTTP Sessions
         ul.lists
@@ -119,29 +135,35 @@ html
           li Microservices roundtrip
           li Stateful
           li No Scalable
-      
+
+          aside(role='note') /profile
+
       +slide('vault')
         h1.title-single-words A new <span class='important'>Hope</span>
-      
+
       +slide('tokens')
         h2 <span class='important'>TOKENS</span>
-      
+
+        aside(role='note') Travels everytime to server
+
       +slide('jwt')
         h2 JWT
         h3 (jot)
         h2 JSON Web Token
-      
+
+        aside(role='note') Part of JOSE RFC 7519
+
       +slide
         h2.underline What is <span class='important'>JWT</span>?
         ul.lists
           li URL safe-token
           li HTTP header or URL parameter
           li Claims are JSON
-          li Enable claims digitally signed, MACed or enncrypted
-      
+          li Enable claims digitally signed, MACed or encrypted
+
       +slide
         img(src='images/tokencolor.png')
-      
+
       +slide
         h2.green Header
         pre.language-javascript
@@ -153,10 +175,10 @@ html
         pre.language-java
           code.
             String header = new String(Base64.encodeBase64URLSafe(headerObject)
-        
+
       +slide
         img(src='images/tokencolor.png')
-      
+
       +slide
         h2.yellowColor Claims
         pre.language-javascript
@@ -167,49 +189,51 @@ html
               "exp": 1416891754,
               "roles": ["ADMIN", "USER"]
             }
-            
+
         pre.language-java
           code.
             String claims = new String(Base64.encodeBase64URLSafe(claimObject)
-      
+
       +slide
         img(src='images/tokencolor.png')
-      
+
       +slide
         h2.blue Signature
         pre.language-java
           code.
-            String signature = sign(algorithm, 
-                                    join(new String[] {header, claims}, "."), 
+            String signature = sign(algorithm,
+                                    join(new String[] {header, claims}, "."),
                                     secret);
       +slide
         img(src='images/tokencolor.png')
-        
+
       +slide
         h2 JWT
         pre.language-java
           code.
             String token = header + "." + payload + "." + signature;
-      
+
       +slide
         img.schemas(src='images/jwt_wf.png')
-      
+
       +slide('engine')
         h2 Start your Engines
-      
+
       +slide('adaglasses')
         h1 Let's see inside
-      
+
       +slide('finger')
         h2 Fingerprinting tokens
-      
+
       +slide
         h2.underline Fingerprinting tokens
         ul.lists
           li Unique parameters
           li One degree of freedom
           li Detect stolen tokens
-          
+
+          aside(role='note') People may use different approaches as well
+
       +slide
         h2.underline Fingerprinting tokens
         ul.lists
@@ -229,9 +253,9 @@ html
 
       +slide('pirates')
         h2 Foolproof
-      
+
       +slide('ending')
-        h1 We are <br/> Finishing
+        h1 Let's wind <br/> down
 
       +slide
         h2.underline Conclusions
@@ -244,6 +268,8 @@ html
           li Don't use HTML 5 Web Storage
           li F5 survival with server cookies
           li Stateful Tokens (oh no)
+
+        aside(role='note') Test easy bcause it is stateless you only need one one token
 
       +slide
         img.avatar(src='images/profile.jpg')

@@ -6,6 +6,7 @@ var bespoke = require('bespoke'),
   scale = require('bespoke-scale'),
   backdrop = require('bespoke-backdrop'),
   overview = require('bespoke-overview'),
+  onstage = require('bespoke-onstage'),
   hash = require('bespoke-hash');
 
 bespoke.from('article', [
@@ -16,6 +17,7 @@ bespoke.from('article', [
   bullets('ul:not(.no-bullets) li, ol:not(.no-bullets) li, .bullet'),
   scale(),
   backdrop(),
+  onstage(),
   hash()
 ]);
 
