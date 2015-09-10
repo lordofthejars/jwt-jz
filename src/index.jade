@@ -50,6 +50,7 @@ html
         ul.lists
           li Architecture style
           li Simpler alternative to SOAP, CORBA, RPC systems
+        div.footer Alex Soto (@alexsotob)
 
       +slide
         h2.underline Constraints
@@ -63,6 +64,7 @@ html
 
         aside(role='note') Client untrusted
         aside(role='note') how to identify resources, manipulate, ...
+        div.footer Alex Soto (@alexsotob)
 
       +slide
         h2.underline What are RESTful WebServices?
@@ -73,20 +75,27 @@ html
           li MIME-type for representation
           li hypertext links
 
+        div.footer Alex Soto (@alexsotob)
+
       +slide
         <b>GET</b> http://example.com/items/12
+        div.footer Alex Soto (@alexsotob)
 
       +slide
         <b>POST</b> http://example.com/items
+        div.footer Alex Soto (@alexsotob)
 
       +slide
         <b>PUT</b> http://example.com/items/12
+        div.footer Alex Soto (@alexsotob)
 
       +slide
         <b>DELETE</b> http://example.com/items/12
+        div.footer Alex Soto (@alexsotob)
 
       +slide
         <b>PATCH</b> http://example.com/items/12
+        div.footer Alex Soto (@alexsotob)
 
       +slide('hotel')
         h1 Authentication <br />vs<br /> Authorization
@@ -94,6 +103,7 @@ html
       +slide
         h3 Authentication = Registration Desk
         h3 Authorization = Keys of your Room
+        div.footer Alex Soto (@alexsotob)
 
       +slide('oldsec')
         h1 Java EE <br />and<br /><span class='important'>Security</span>
@@ -111,6 +121,7 @@ html
         h4 &mdash; OWASP site &mdash;
 
         aside(role='note') Like SQL injection
+        div.footer Alex Soto (@alexsotob)
 
       +slide('owasp')
         h3 &ldquo;<b>CSRF</b> is an attack that forces an end user to execute unwanted actions on a web application <br /> in which they're currently authenticated.&rdquo;
@@ -118,12 +129,14 @@ html
         h4 &mdash; OWASP site &mdash;
 
         aside(role='note') Malicious system acts on behalf of real user
+        div.footer Alex Soto (@alexsotob)
 
       +slide('owasp')
         h3 &ldquo;<b>The man-in-the middle</b> attack intercepts a communication between two systems.<br />The MITM attack could also be done over an https connection by using the same technique.&rdquo;
         h4 &mdash; OWASP site &mdash;
 
         aside(role='note') Https not secure
+        div.footer Alex Soto (@alexsotob)
 
       +slide('adaoh')
         h2 HTTP Session and <span class='important'>RESTful</span>
@@ -136,7 +149,8 @@ html
           li Stateful
           li No Scalable
 
-          aside(role='note') /profile
+        aside(role='note') /profile
+        div.footer Alex Soto (@alexsotob)
 
       +slide('vault')
         h1.title-single-words A new <span class='important'>Hope</span>
@@ -152,6 +166,7 @@ html
         h2 JSON Web Token
 
         aside(role='note') Part of JOSE RFC 7519
+        div.footer Alex Soto (@alexsotob)
 
       +slide
         h2.underline What is <span class='important'>JWT</span>?
@@ -160,6 +175,7 @@ html
           li HTTP header or URL parameter
           li Claims are JSON
           li Enable claims digitally signed, MACed or encrypted
+        div.footer Alex Soto (@alexsotob)
 
       +slide
         img(src='images/tokencolor.png')
@@ -232,7 +248,8 @@ html
           li One degree of freedom
           li Detect stolen tokens
 
-          aside(role='note') People may use different approaches as well
+        aside(role='note') People may use different approaches as well
+        div.footer Alex Soto (@alexsotob)
 
       +slide
         h2.underline Fingerprinting tokens
@@ -240,6 +257,7 @@ html
           li Connection: IP, SSL ID
           li Browser: Agent, Accept-Language, Accept, Accept-Encoding
           li Javascript: Screen size, OS, TimeZone
+        div.footer Alex Soto (@alexsotob)
 
       +slide('alexband')
         h1 Watch your <br/> <span class='important'>sensitive data</span>
@@ -250,6 +268,7 @@ html
           li Use TLS
           li Encrypt JWT claims using <span class='important'>JWE</span>
           li Nested JWT using <span class='important'>JWE</span> (signed -> encrypted)
+        div.footer Alex Soto (@alexsotob)
 
       +slide('pirates')
         h2 Foolproof
@@ -270,6 +289,7 @@ html
           li Stateful Tokens (oh no)
 
         aside(role='note') Test easy bcause it is stateless you only need one one token
+        div.footer Alex Soto (@alexsotob)
 
       +slide
         img.avatar(src='images/profile.jpg')
@@ -280,5 +300,7 @@ html
       +slide('adarise')
         h1 Questions
 
+      +slide('javazone')
+        h1 Thank You
 
     script(src='build/build.js')

@@ -19,6 +19,15 @@ h1.name
   font-size: 1.3em
   margin: 0
 
+.footer
+  font-size: 0.5em
+  color:white
+  position: fixed
+  text-align:left
+  bottom: 0
+  left: 0
+  padding: 10px
+
 .avatar
   filter: grayscale(30%)
   width: 120px
@@ -100,6 +109,13 @@ pre, code
   &--owasp
     background-color: white
     background-image: url('../images/owasp_logo.png')
+    background-size: 30%
+    background-repeat: no-repeat
+    &.bespoke-backdrop-active
+      opacity: 0.25
+  &--javazone
+    background-color: white
+    background-image: url('../images/javazone.png')
     background-size: 30%
     background-repeat: no-repeat
     &.bespoke-backdrop-active
