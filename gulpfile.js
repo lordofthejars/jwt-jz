@@ -15,6 +15,8 @@ var pkg = require('./package.json'),
   opn = require('opn'),
   ghpages = require('gh-pages'),
   path = require('path'),
+  pdf = require('bespoke-pdf'),
+  rimraf = require('gulp-rimraf'),
   isDist = process.argv.indexOf('serve') === -1;
 
 gulp.task('js', ['clean:js'], function() {
@@ -103,6 +105,16 @@ gulp.task('watch', function() {
 
 gulp.task('deploy', ['build'], function(done) {
   ghpages.publish(path.join(__dirname, 'dist'), { logger: gutil.log, message: 'Updates --skip-ci' }, done);
+});
+
+gulp.task('pdf', ['connect'], function () {
+  return pdf(pkg.name + '.pdf')
+    .pipe(gulp.dest('dist'));
+});
+
+gulp.task('clean:pdf', function() {
+  return gulp.src('dist/' + pkg.name + '.pdf')
+    .pipe(rimraf());
 });
 
 gulp.task('build', ['js', 'html', 'css', 'images']);

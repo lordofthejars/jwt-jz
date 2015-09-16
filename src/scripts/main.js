@@ -7,7 +7,8 @@ var bespoke = require('bespoke'),
   backdrop = require('bespoke-backdrop'),
   overview = require('bespoke-overview'),
   onstage = require('bespoke-onstage'),
-  hash = require('bespoke-hash');
+  hash = require('bespoke-hash'),
+  pdf = require('bespoke-pdf');
 
 bespoke.from('article', [
   nebula(),
@@ -18,7 +19,8 @@ bespoke.from('article', [
   scale(),
   backdrop(),
   onstage(),
-  hash()
+  hash(),
+  pdf()
 ]);
 
 require('prism');
