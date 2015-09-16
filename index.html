@@ -9,6 +9,7 @@
     <article>
       <section data-bespoke-backdrop="backdrop backdrop--title" class="title undefined">
         <h1> Make your <span class='important'>REST</span> services<br /> <span class='important'>attack</span> proof</h1>
+        <aside role="note">SPA and public API</aside>
       </section>
       <section><img src="images/profile.jpg" class="avatar">
         <h4>@alexsotob - lordofthejars.com</h4><img src="images/cloudbees.png" class="cloudbees"><img src="images/logos.png" class="logos">
@@ -31,19 +32,23 @@
         <h2 class="underline">What is REST?</h2>
         <ul class="lists">
           <li>Architecture style</li>
-          <li>simpler alternative to SOAP, CORBA, RPC systems</li>
+          <li>Simpler alternative to SOAP, CORBA, RPC systems</li>
         </ul>
+        <div class="footer">Alex Soto (@alexsotob)</div>
       </section>
       <section>
         <h2 class="underline">Constraints</h2>
         <ul class="lists">
-          <li class="important">client-server</li>
-          <li class="important">stateless</li>
-          <li>cacheable on client</li>
-          <li>code on demand (optional)</li>
-          <li>layered system</li>
-          <li>uniform interface</li>
+          <li class="important">Client-server</li>
+          <li class="important">Stateless</li>
+          <li>Cacheable on client</li>
+          <li>Code on demand (optional)</li>
+          <li>Layered system</li>
+          <li>Uniform interface</li>
         </ul>
+        <aside role="note">Client untrusted</aside>
+        <aside role="note">how to identify resources, manipulate, ...</aside>
+        <div class="footer">Alex Soto (@alexsotob)</div>
       </section>
       <section>
         <h2 class="underline">What are RESTful WebServices?</h2>
@@ -54,14 +59,22 @@
           <li>MIME-type for representation</li>
           <li>hypertext links</li>
         </ul>
+        <div class="footer">Alex Soto (@alexsotob)</div>
       </section>
-      <section>
-        <h2 class="underline">Examples</h2>
-        <h3>GET http://example.com/items/12</h3>
-        <h3>POST http://example.com/items</h3>
-        <h3>PUT http://example.com/items/12</h3>
-        <h3>DELETE http://example.com/items/12</h3>
-        <h3>PATCH http://example.com/items/12</h3>
+      <section><b>GET</b> http://example.com/items/12
+        <div class="footer">Alex Soto (@alexsotob)</div>
+      </section>
+      <section><b>POST</b> http://example.com/items
+        <div class="footer">Alex Soto (@alexsotob)</div>
+      </section>
+      <section><b>PUT</b> http://example.com/items/12
+        <div class="footer">Alex Soto (@alexsotob)</div>
+      </section>
+      <section><b>DELETE</b> http://example.com/items/12
+        <div class="footer">Alex Soto (@alexsotob)</div>
+      </section>
+      <section><b>PATCH</b> http://example.com/items/12
+        <div class="footer">Alex Soto (@alexsotob)</div>
       </section>
       <section data-bespoke-backdrop="backdrop backdrop--hotel" class="hotel undefined">
         <h1>Authentication <br />vs<br /> Authorization</h1>
@@ -69,9 +82,11 @@
       <section>
         <h3>Authentication = Registration Desk</h3>
         <h3>Authorization = Keys of your Room</h3>
+        <div class="footer">Alex Soto (@alexsotob)</div>
       </section>
       <section data-bespoke-backdrop="backdrop backdrop--oldsec" class="oldsec undefined">
         <h1>Java EE <br />and<br /><span class='important'>Security</span></h1>
+        <aside role="note">Http Session old times, web desc, java ee, Shiro Spring Sec</aside>
       </section>
       <section><img src="images/cookies.png" class="schemas">
       </section>
@@ -79,20 +94,23 @@
         <h2>Perils of <span class='important'>cookies</span></h2>
       </section>
       <section data-bespoke-backdrop="backdrop backdrop--owasp" class="owasp undefined">
-        <h2 class="underline">XSS attack</h2>
-        <h3>&ldquo;XSS attacks occur when an attacker uses a web application<br /> to send malicious code, generally in the form of a browser side script,<br /> to a different end user.&rdquo;</h3>
+        <h3>&ldquo;<b>XSS</b> attacks occur when an attacker uses a web application<br /> to send malicious code, generally in the form of a browser side script,<br /> to a different end user.&rdquo;</h3>
         <h4>&mdash; OWASP site &mdash;</h4>
+        <aside role="note">Like SQL injection</aside>
+        <div class="footer">Alex Soto (@alexsotob)</div>
       </section>
       <section data-bespoke-backdrop="backdrop backdrop--owasp" class="owasp undefined">
-        <h2 class="underline">CSRF attack</h2>
-        <h3>&ldquo;CSRF is an attack that forces an end user to execute unwanted actions on a web application <br /> in which they're currently authenticated.&rdquo;</h3>
+        <h3>&ldquo;<b>CSRF</b> is an attack that forces an end user to execute unwanted actions on a web application <br /> in which they're currently authenticated.&rdquo;</h3>
         <h3>&lt;img src="http://bank.com/transfer.do?acct=MARIA&amount=100000" width="0" height="0" border="0"&gt;</h3>
         <h4>&mdash; OWASP site &mdash;</h4>
+        <aside role="note">Malicious system acts on behalf of real user</aside>
+        <div class="footer">Alex Soto (@alexsotob)</div>
       </section>
       <section data-bespoke-backdrop="backdrop backdrop--owasp" class="owasp undefined">
-        <h2 class="underline">MITM attack</h2>
-        <h3>&ldquo;The man-in-the middle attack intercepts a communication between two systems.<br />The MITM attack could also be done over an https connection by using the same technique.&rdquo;</h3>
+        <h3>&ldquo;<b>The man-in-the middle</b> attack intercepts a communication between two systems.<br />The MITM attack could also be done over an https connection by using the same technique.&rdquo;</h3>
         <h4>&mdash; OWASP site &mdash;</h4>
+        <aside role="note">Https not secure</aside>
+        <div class="footer">Alex Soto (@alexsotob)</div>
       </section>
       <section data-bespoke-backdrop="backdrop backdrop--adaoh" class="adaoh undefined">
         <h2>HTTP Session and <span class='important'>RESTful</span></h2>
@@ -105,17 +123,22 @@
           <li>Stateful</li>
           <li>No Scalable</li>
         </ul>
+        <aside role="note">/profile</aside>
+        <div class="footer">Alex Soto (@alexsotob)</div>
       </section>
       <section data-bespoke-backdrop="backdrop backdrop--vault" class="vault undefined">
         <h1 class="title-single-words">A new <span class='important'>Hope</span></h1>
       </section>
       <section data-bespoke-backdrop="backdrop backdrop--tokens" class="tokens undefined">
         <h2><span class='important'>TOKENS</span></h2>
+        <aside role="note">Travels everytime to server</aside>
       </section>
       <section data-bespoke-backdrop="backdrop backdrop--jwt" class="jwt undefined">
         <h2>JWT</h2>
         <h3>(jot)</h3>
         <h2>JSON Web Token</h2>
+        <aside role="note">Part of JOSE RFC 7519</aside>
+        <div class="footer">Alex Soto (@alexsotob)</div>
       </section>
       <section>
         <h2 class="underline">What is <span class='important'>JWT</span>?</h2>
@@ -123,8 +146,9 @@
           <li>URL safe-token</li>
           <li>HTTP header or URL parameter</li>
           <li>Claims are JSON</li>
-          <li>Enable claims digitally signed, MACed or enncrypted</li>
+          <li>Enable claims digitally signed, MACed or encrypted</li>
         </ul>
+        <div class="footer">Alex Soto (@alexsotob)</div>
       </section>
       <section><img src="images/tokencolor.png">
       </section>
@@ -155,8 +179,8 @@
       </section>
       <section>
         <h2 class="blue">Signature</h2>
-        <pre class="language-java"><code>String signature = sign(algorithm, 
-                        join(new String[] {header, claims}, "."), 
+        <pre class="language-java"><code>String signature = sign(algorithm,
+                        join(new String[] {header, claims}, "."),
                         secret);</code></pre>
       </section>
       <section><img src="images/tokencolor.png">
@@ -184,6 +208,8 @@
           <li>One degree of freedom</li>
           <li>Detect stolen tokens</li>
         </ul>
+        <aside role="note">People may use different approaches as well</aside>
+        <div class="footer">Alex Soto (@alexsotob)</div>
       </section>
       <section>
         <h2 class="underline">Fingerprinting tokens</h2>
@@ -192,6 +218,7 @@
           <li>Browser: Agent, Accept-Language, Accept, Accept-Encoding</li>
           <li>Javascript: Screen size, OS, TimeZone</li>
         </ul>
+        <div class="footer">Alex Soto (@alexsotob)</div>
       </section>
       <section data-bespoke-backdrop="backdrop backdrop--alexband" class="alexband undefined">
         <h1>Watch your <br/> <span class='important'>sensitive data</span></h1>
@@ -203,18 +230,20 @@
           <li>Encrypt JWT claims using <span class='important'>JWE</span></li>
           <li>Nested JWT using <span class='important'>JWE</span> (signed -> encrypted)</li>
         </ul>
+        <div class="footer">Alex Soto (@alexsotob)</div>
       </section>
       <section data-bespoke-backdrop="backdrop backdrop--pirates" class="pirates undefined">
         <h2>Foolproof</h2>
       </section>
       <section data-bespoke-backdrop="backdrop backdrop--ending" class="ending undefined">
-        <h1>We are <br/> Finishing</h1>
+        <h1>Let's wind <br/> down</h1>
       </section>
       <section>
         <h2 class="underline">Conclusions</h2>
         <ul class="lists">
           <li>Tokens simplifies RESTful auth</li>
           <li>Easy to implement and test</li>
+          <li>No Logout</li>
           <li>OAuth2, SAML, OpenID</li>
           <li>Nimbus JOSE + JWT / JJWT</li>
           <li>Key rotation</li>
@@ -222,12 +251,17 @@
           <li>F5 survival with server cookies</li>
           <li>Stateful Tokens (oh no)</li>
         </ul>
+        <aside role="note">Test easy bcause it is stateless you only need one one token</aside>
+        <div class="footer">Alex Soto (@alexsotob)</div>
       </section>
       <section><img src="images/profile.jpg" class="avatar"><br><a href="http://github.com/lordofthejars/jwt-jz" style="border:none">
           <h3>http://github.com/lordofthejars/jwt-jz</h3></a>
       </section>
       <section data-bespoke-backdrop="backdrop backdrop--adarise" class="adarise undefined">
         <h1>Questions</h1>
+      </section>
+      <section data-bespoke-backdrop="backdrop backdrop--javazone" class="javazone undefined">
+        <h1>Tusen Takk</h1>
       </section>
     </article>
     <script src="build/build.js"></script>
